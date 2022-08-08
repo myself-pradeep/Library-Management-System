@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BookBorrow</title>
+     <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="images/bookborrow logo.png" alt="" class="logo">
+        <nav>
+           <ul id="menuList">
+             <li><a href="#">Books Available</a></li>
+             <li><a href="#">Login</a></li>
+             <li><a href="#">Contact Us</a></li>
+
+           </ul>
+        </nav>
+        <img src="images/menu.png" alt="" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <h2>A Mutual Book Exchange Portal &#160;&#160; <span class="small-text">for passionate readers.</span> </h2>
+            <h3>Share, Borrow, Exchange or Return books</h3>
+            <h4>New user? Register here</h4>
+            <button type="button" name="button">REGISTER <img src="images/arrow.png"</button>
+          </div>
+          <div class="col-2">
+            <img src="images/library animation.png" class="library-animation">
+
+          </div>
+        </div>
+
+        <div class="social-links">
+          <img src="images/fb.png">
+          <img src="images/tw.png">
+          <img src="images/ig.png">
+        </div>
+
+      </div>
+
+      <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight ="0px";
+        function togglemenu(){
+          if(menuList.style.maxHeight =="0px")
+          {
+            menuList.style.maxHeight = "130px";
+          }
+          else
+            {
+              menuList.style.maxHeight = "0px";
+            }
+          }
+
+      </script>
+  </body>
+</html>
